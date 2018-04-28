@@ -40,7 +40,7 @@
     </target>
     <target name="Sinalgo" depends="build">
         <java classname="sinalgo.runtime.Main" failonerror="true" fork="on"> 
-        <jvmarg line="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=9010" />
+        <jvmarg line="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=9011" />
             <arg line="-project clocksync batch"/>
             <classpath refid="Sinalgo.classpath"/>
         </java>
