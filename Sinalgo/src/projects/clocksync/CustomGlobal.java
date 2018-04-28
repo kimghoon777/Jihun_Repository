@@ -92,9 +92,11 @@ public class CustomGlobal extends AbstractCustomGlobal
 	// network topology
 	public static String PARAMETER_TOPOLOGY = "CLIQUE";
 	public static boolean PARAMETER_SHUFFLE_NODE_POSITION = false;
-	public static int PARAMETER_NUMBER_OF_NODES = 20;
+	public static int PARAMETER_NUMBER_OF_NODES = 5;
 	public static Class<? extends TimeSyncNode> PARAMETER_NODE_TYPE
-		= PulseTimeSyncProtocolNode.class;
+		//= PulseTimeSyncProtocolNode.class;
+		= FloodingTimeSyncProtocolNode.class;
+		//= GradientTimeSyncProtocolNode.class;
 	
 	// simulation-specific parameters
 	public static String PARAMETER_SIMULATION_LABEL = PARAMETER_NODE_TYPE.getSimpleName() + " @" + format.format(new Date());
